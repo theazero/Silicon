@@ -1,0 +1,226 @@
+:root { 
+    --clr-primary: #6366F1; 
+
+    --clr-gray-600: #9397AD; 
+    --clr-gray-700: #565973; 
+    --clr-gray-800: #9397AD; 
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: block;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.main{
+    padding-inline: 5rem;
+}
+
+
+.navbar{
+    display: flex;
+    width: 100%;
+    padding-inline: 5rem;
+    margin: 0 auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: 768px) {
+        {max-width: 720px;}
+        }
+
+    @media (min-width: 1400px) {
+    body {
+        max-width: 1320px;
+    }
+    }
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.signup{
+    width: 140px;
+    height: auto;
+
+}
+
+
+/* toggle Switch styling DETTA ÄR FRÅN CHATGPT SAMT W3 SCHOOL*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 46px;
+    height: 24px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--clr-gray-600);
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: calc(100% - 4px);
+    width: 20px;
+    left: 2px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  /* Dark mode styling */
+  body6366F1.dark-mode {
+    background-color: #6366F1;
+    color: rgb(80, 75, 75);
+  }
+  
+
+  .header {
+    width: 50%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 20px; /* Ger lite utrymme runt innehållet */
+    text-align: left; /* Justerar texten till vänster */
+    align-items: center;
+    padding-inline: 5rem;
+}
+
+.title {
+    width: 100%; /* Tar upp hela bredden av sin container */
+    margin: 0; /* Ingen marginal centrering */
+    height: auto;
+    display: block; /* Standardblocklayout, ingen flex behövs för detta */
+}
+
+.appstore, .googleplay {
+    display: block; /* Gör bilderna blocknivå */
+    margin-bottom: 10px; /* Ger utrymme mellan bilderna */
+    width: 180px;
+    height: 52px;
+}
+
+.iphone2 {
+    width: 270px; /* Justera bredden som du vill */
+    position: absolute; /* Absolut positionering */
+    top: 10rem;
+    right: 0; /* Placerar bilden vid högerkanten */
+    margin: 10; /* Tar bort eventuella marginaler */
+}
+
+.info-button {
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    bottom: 0;
+    position: absolute;
+    
+}
+
+
+.mini-logo {
+    display: flex; /* Gör att bilderna placeras horisontellt */
+    justify-content: center; /* Centrerar bilderna horisontellt */
+    list-style-type: none; /* Tar bort punktmarkeringar */
+    padding: 1px 0;
+    margin-top: 500px; /* Justera detta värde beroende på hur långt ner du vill placera bilderna */
+    position: relative; /* Detta gör att elementet kan ha positionerade barn */
+    background-color: #f0f0f0; /* Lägg till bakgrundsfärg */
+    padding: 20px; /* Lite utrymme runt bilderna */
+    z-index: 10; /* Detta gör att elementet placeras över andra element */
+}
+
+.mini-logo img {
+    margin: 0 10px; /* Ger 10px mellanrum horisontellt mellan bilderna */
+    max-width: 100px; /* Ställ in en maxbredd på bilderna, justera efter behov */
+    height: auto; /* Bibehåll proportionerna */
+}
+
+.sida2 {
+    display: flex; /* Använd Flexbox för horisontell layout */
+    justify-content: flex-end; /* Flytta allt innehåll till höger */
+    align-items: flex-start; /* Justera elementen till toppen */
+    width: 100%;
+    padding-inline: 5rem; /* Avstånd från kanterna */
+    margin-left: auto;
+}
+
+.sneiphone img {
+    width: 270px;
+    height: auto;
+    justify-self: unset;
+    align-items: left;
+    position: absolute;
+
+    
+}
+
+.features {
+    display: flex; /* Använd Flexbox för horisontell layout */
+    flex-direction: column;
+    justify-content: flex-end; /* Flytta allt innehåll till vänster */
+    align-items: flex-end; /* Justera elementen till toppen */
+    width: 100%;
+    padding-inline: 5rem; /* Avstånd från kanterna */
+    margin-top: 50px; /* Lägg till lite utrymme ovanför features-boxarna */
+    margin-left: auto; /* Centrera features-boxarna */
+}
+
+.features h2 {
+    margin-bottom: 20px; /* Lägg till lite utrymme under rubriken */
+}
+.featuresbox {
+    width: 50%; /* Begränsar bredden till 50% för att hålla den till höger */
+    display: grid; /* Använd CSS Grid för layouten */
+    grid-template-columns: repeat(2, 1fr); /* Två kolumner för innehållet */
+    grid-gap: 20px; /* Mellanrum mellan boxarna */
+    margin-top: 20px;
+    padding: 20px;
+    margin-left: auto
+
+
+}
+
+
+.features img {
+    max-width: 100%; /* För att säkerställa att bilderna inte överstiger boxens storlek */
+}
+
+#box1, #box2, #box3, #box4, #box5, #box6 {
+    background-color: #f9f9f9; /* Bakgrundsfärg för boxarna */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
