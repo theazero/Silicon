@@ -5,23 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inlämningsuppgiften</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
 </head>
-<body>
+<body class="bodywrap">
     <nav class="navbar"> 
         
         <!-- vänstra sidan -->
         <div class="flex"> 
            <img class="logo" src="bilderdesktop/solid.svg" alt="logga">
-           <a href="a">Features</a> 
+           <a href="">Features</a> 
         </div>
 
          <!-- högra sidan -->
         <div class="flex"> 
           <p>Dark Mode</p>
          
-          <label class="switch" for="darkModeToggle">
-           <input type="checkbox" id="darkModeToggle" aria-label="Toggle dark mode"> <!-- kanske ta bort aria-label om det inte dyker upp-->
-           <span class="slider round"></span>
+          <label class="switch" for="darkmode-switch">
+            <input type="checkbox" id="darkmode-switch" aria-label="Toggle dark mode">
+            <span class="slider round"></span>
           </label>
  
           <img class="signup" src="bilderdesktop/btn.svg" alt="loggain">
@@ -29,13 +34,24 @@
 
     </nav>
 
+    <div class="backgrund1"> </div>  <!-- visste inte hur jag skulle annars skulle få bakgrunden att gå utanför bodywraps margin, detta var min lösning efter många försök -->
+
  <main>
 
+    
+
     <header class="header"> 
-        <h1 class="title">Manage All Your<br>Money in One App</h1>
+
+        
+
+        <div class="headerbox">
+         <h1 class="title"><strong>Manage All Your<br>Money in One App</strong></h1>
          <p>We offer you a new generation of the mobile banking.<br>Save, spend & manage money in your pocket.</p>
-         <img class="appstore" src="bilderdesktop/appstore.svg" alt="appstore">
-         <img class="googleplay" src="bilderdesktop/googleplay.svg" alt="googleplay">
+         <div class="app-images">
+          <img class="appstore" src="bilderdesktop/appstore.svg" alt="appstore">
+          <img class="googleplay" src="bilderdesktop/googleplay.svg" alt="googleplay">
+         </div>
+        </div>
 
         <img class="iphone2" src="bilderdesktop/iphone2.svg" alt="iphone2">
 
@@ -43,9 +59,6 @@
             <img class="next-btn" src="bilderdesktop/next-btn.svg" alt="next-btn"> 
             <p> Discover more</p> 
         </div>
-         
-        
-   
 
     </header>
 
@@ -68,43 +81,55 @@
         </div>
 
         <div class="features">
-         <h2>App Features</h2>
+         <h1>App Features</h1>
          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat mollis egestas.<br> Nam luctus facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at nec lacus.</p>
         </div>
 
         <div class="featuresbox"> 
             <div id="box1">
-                <img src="bilderdesktop/feature1.svg" alt="">
+                <div class="icon-wrapper">
+                    <i class="fa-regular fa-credit-card"></i>
+                </div>
                 <h3>Easy Payments</h3>
-                <p>Id mollis consectetur congue egestas egestas suspendisse <br> blandit justo</b></p>
+                <p>Id mollis consectetur congue<br> egestas egestas suspendisse <br> blandit justo</b></p>
             </div>
 
             <div id="box2">
-                <img src="bilderdesktop/feature2.svg" alt="">
+                <div class="icon-wrapper">
+                    <i class="fa-sharp fa-solid fa-shield"></i>
+                </div>
                 <h3>Data Security</h3>
                 <p>Augue pulvinar justo, fermentum <br> fames aliquam accumsan <br> vestibulum non.</p>
             </div>
 
             <div id="box3">
-                <img src="bilderdesktop/feature3.svg" alt="">
+                <div class="icon-wrapper">
+                    <i class="fa-solid fa-chart-column"></i>
+                </div>
                 <h3>Cost Statistics</h3>
                 <p>Mattis urna ultricies non amet, <br> purus in auctor non. Odio vulputate <br> ac nibh.</p>
             </div>
 
             <div id="box4">
-                <img src="bilderdesktop/feature3.svg" alt="">
+                <div class="icon-wrapper">
+                    <i class="fa-regular fa-comments"></i>
+                </div>
                 <h3>Support 24/7</h3>
                 <p>A elementum, imperdiet enim,<br>pretium etiam facilisi in aenean<br> quam mauris. </p>
             </div>
 
             <div id="box5">
-                <img src="bilderdesktop/feature3.svg" alt="">
+                <div class="icon-wrapper">
+                    <i class="fa-solid fa-wallet"></i>
+                </div>
                 <h3>Regular Cashback</h3>
                 <p>Sit facilisi dolor arcu, fermentum<br>vestibulum arcu elementum<br>imperdiet eleifend</p>
             </div>
 
             <div id="box6">
-                <img src="bilderdesktop/feature3.svg" alt="">
+                <div class="icon-wrapper">
+                    <i class="fa-regular fa-face-smile-beam"></i>
+                </div>
                 <h3>Top Standards</h3>
                 <p>Faucibus cursus maecenas lorem<br>cursus nibh. Sociis sit risus id. Sit<br>facilisis dolor arcu.</p>
             </div>
@@ -112,19 +137,137 @@
         </div>
     </p>
 
-    <p class="sida3"> 
 
-        <h2> How Does It Work?</h2>
+    <div class="sida3"> 
 
-        TRE BILDER HÄR
+        <h2 class="HDIW"> How Does It Work?</h2>
+
+        <div class="iphones"> 
+         <img src="bilderdesktop/iphonehalv.svg" alt="">
+         <img src="bilderdesktop/iphone.svg" alt="">
+         <img src="bilderdesktop/iphonehalv2.svg" alt="">
+        </div>
 
         <h3>Latest transaction history</h3>
         <p> Enim, et amet praesent pharetra. Mi non ante hendrerit amet sed. Arcu sociis tristique <br> quisque hac in consectetur condimentum. </p>
-    </p>
+    </div>
+
+    <div class="backgrund2"> </div>
+
+    <div class="sida4">
+
+        <div class="money"> 
+            <div class="money1"> 
+             <h3>Make your money <br> transfer simple and clear</h3>
+              <ul>
+                 <li> <i class="fa-regular fa-circle-check"></i> Banking transaction are free for you</li>
+                 <li> <i class="fa-regular fa-circle-check"></i> No monthly cash commission</li>
+                 <li> <i class="fa-regular fa-circle-check"></i>Manage payments and transactions online</li>
+               </ul> 
+              <button>Learn more <i class="fa-solid fa-arrow-right"></i></button>
+           </div>
+
+         <img src="bilderdesktop/bildx2.svg" alt="">
+
+        </div>
+
+        <div class="payment"> 
+            <img class="bildx22" src="bilderdesktop/bildx22.svg" alt="">
+            <h3 class="header2">Receive payment from<br>international bank details</h3>
+            <p class="left"> <img src="bilderdesktop/knapp1.svg" alt=""><br>Manage your payments online.<br>Mollis congue egestas egestas<br>fermentum fames. </p>
+            <p class="right"> <img src="bilderdesktop/knapp2.svg" alt=""><br>A elementur and imperdiet enim.<br>pretium etiam facilisi aenean<br>quam mauris.</p>
+
+            <button class="footer">Learn more   <i class="fa-solid fa-arrow-right"></i></button>
+
+        </div>
+
+    </div>
+<div class="backgrund3"> </div>
+    <div class="sida5">
+        <h3>Clients are<br>Loving Our App</h3>
+        
+        <div class="container">
+            <a><i class="fa-solid fa-quote-left"></i></a>
+            <div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <div>Sit pretium aliquam tempor, orci dolor sed<br>maecenas rutrum sagittis. Laoreet posuere<br>rhoncus egestat lacus, egestas justo<br> aliwuam vel. Nisi vitae lectus hac handrerit.<br>Montes justo turpis sit amet.</div>
+            <div><img src="bilderdesktop/fannie.svg" alt=""><span>Fannie Summers</span> <br> <p>Designer</p></div>
+        </div>
+
+        <div class="container">
+            <a><i class="fa-solid fa-quote-left"></i></a>
+            <div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <div>Nunc senectus leo vel venenatis accumsan<br>vestibulum sollicitudin amet porttitor. Nisi<br>bibendum nulla tincidunt eu enim ornare<br>dictumst sit amet. Dictum pretium dolor<br>tincidunt egestas eget nunc.</div>
+            <div><img src="bilderdesktop/albert.svg" alt=""><span>Albert Flores</span> <br><p>Developer</p></div>
+        </div>
+
+    </div>
+
+    <div class="sida6"> 
+
+        <div class="left">
+          <div class="FAQ">
+             <h3><stronger>Any Questions?<br> Check out the FAQs</stronger></h3>
+             <div>Still have unanswered questions and need to get<br>in touch?</div>
+          </div>
+
+         <div class="boxes">
+          <div class="box1">
+             <i class="fa-solid fa-phone-volume" style="color: #6366F1;"></i>
+             <div>Still have questions?</div>
+             <a href="">Contact us <i class="fa-solid fa-arrow-right"></i> </a>
+
+          </div>
+
+          <div class="box2">
+             <i class="fa-solid fa-comment-dots" style="color: #22C55E;"></i>
+             <div>Don't like phone calls?</div>
+             <a href="">Contact us <i class="fa-solid fa-arrow-right"></i> </a>
+          </div>
+         </div>
+        </div>
+
+     <div class="right">
+         <div class="q1"><stronger>Is any of my personal information stored in the App?</stronger><i class="fa-duotone fa-solid fa-circle-chevron-down" style="color:#F3F6FF"></i></i></div>
+         <div class="q2"><stronger>What formats can I download my transaction history in?</stronger> <i class="fa-duotone fa-solid fa-circle-chevron-down" style="color:#F3F6FF"></i></div>
+         <div class="q3"><stronger>Can I Schedule future transfers?</stronger> <i class="fa-solid fa-circle-chevron-up" style="color:#6366F1"></i><br><p style="color:#565973">Nunc duis id aenean gravida tincidunt eu. tempor ullamorper. Viverra aliquam arcu. vivierrrra et. cursus. Aliquet<br>pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan<br>lectus non. Massa curcus molestie lorem schelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing<br>euismod montes. duis egestas. Vehicula eu etiam quam tristique tincidunt suspensdisse ut consequt.</p></div>
+         <div class="q4"><stronger>When can I use Banking App services?</stronger> <i class="fa-duotone fa-solid fa-circle-chevron-down" style="color:#F3F6FF"></i></div>
+         <div class="q5"><stronger>Can I create my own password that is easy for me to remember?</stronger><i class="fa-duotone fa-solid fa-circle-chevron-down" style="color:#F3F6FF"></i></div>
+         <div class="q6"><stronger>What happens if I forget or lose my password?</stronger><i class="fa-duotone fa-solid fa-circle-chevron-down" style="color:#F3F6FF"></i></div>
+     </div>
+
+
+    
+    </div>
+
+    <div class="sida7">
+  
+        <div class="newsletter">
+         <div class="subscribe">
+          <i class="fa-solid fa-circle circle"></i>
+          <i class="fa-solid fa-bell bell"></i>
+          <h3> Subscribe to our newsletter to stay <br> informed about latest updates</h3>
+         </div>
+  
+  
+         <div class="input group">
+             <i class="fa-solid fa-envelope icon"></i>
+             <input class="form input email" type="text" placeholder="  Your Email">
+             <button class="submit-btn">Subscribe</button>
+  
+  
+         </div>
+  
+  
+  
+  
+      </div>
+  
+
 
  </main>
 
- <footer> &copy; 2024 silicon. all rights reserved. credit madrasthemes</footer>
+
+ <footer> &copy; 2024 Silicon. All Rights Reserved. Credit Madrasthemes</footer>
 
 
     
